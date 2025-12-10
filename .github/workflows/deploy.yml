@@ -237,9 +237,9 @@ jobs:
 
           sudo rm -rf /home/ubuntu/.env
 
-          echo "HOST=${{ secrets.HOST }}" >> .env
-          echo "USER=${{ secrets.USER }}" >> .env
-          echo "EC2_SSH_PRIVATE_KEY=${{ secrets.EC2_SSH_PRIVATE_KEY}}" >> .env
+          echo "HOST=${{ secrets.HOST }}" >> /home/ubuntu/.env
+          echo "USER=${{ secrets.USER }}" >> /home/ubuntu/.env
+          echo "EC2_SSH_PRIVATE_KEY=${{ secrets.EC2_SSH_PRIVATE_KEY}}" >> /home/ubuntu/.env
 
           chmod 600 /home/ubuntu/.env
         
